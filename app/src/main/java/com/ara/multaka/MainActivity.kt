@@ -161,3 +161,6 @@ class MainActivity : AppCompatActivity() {
     //End Class
 
 //https://stackoverflow.com/questions/56174535/kotlin-webview-multiple-file-upload
+
+// for press back with out getting out the app, to navigate back through webview please follow:
+//https://stackoverflow.com/questions/6077141/how-to-go-back-to-previous-page-if-back-button-is-pressed-in-webview
