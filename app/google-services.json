@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565994997123",
+    "firebase_url": "https://multaka-fcm-b0498.firebaseio.com",
+    "project_id": "multaka-fcm-b0498",
+    "storage_bucket": "multaka-fcm-b0498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565994997123:android:95896816dcba9dc7",
+        "android_client_info": {
+          "package_name": "com.ara.multaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565994997123-n6mropcrgt7v1v542d1i17rb0fb4n7l8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ara.multaka",
+            "certificate_hash": "2a2caeee0c45179a7223e05c24dee1735c1717f2"
+          }
+        },
+        {
+          "client_id": "565994997123-hogerldtjrf0tna2li77vc5lob684muf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVmc0_W2-Ngb0cevuJ46SzqdnOmf95SVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565994997123-hogerldtjrf0tna2li77vc5lob684muf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
