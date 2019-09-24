@@ -1,39 +1,28 @@
-package com.ara.multaka
+package com.ara.school
 
 
 import android.app.*
-import android.app.PendingIntent.*
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
-import android.media.RingtoneManager
 import android.os.Build
 
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
 import android.util.Log
-import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.annotation.WorkerThread
 import androidx.core.app.NotificationCompat
 import android.graphics.BitmapFactory
 import android.graphics.Bitmap
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.widget.Toast
 
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
 
-import okhttp3.RequestBody
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import com.google.firebase.iid.FirebaseInstanceId
 import okhttp3.Request
 
 
@@ -135,7 +124,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             .setContentText(remoteMessage.data.get("body"))
             .setNumber(3) // this shows a number in the notification dots
             .setContentIntent(resultPendingIntent)
-            .setLargeIcon(getBitmapFromURL("http://multaka.ahmadiraq.com/img/multaka-logo.png"))
+            .setLargeIcon(getBitmapFromURL("http://school.ahmadiraq.com/img/school-logo.png"))
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
@@ -179,13 +168,13 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
      * is initially generated so this is where you would retrieve the token.
      */
     override fun onNewToken(token: String) {
-        Log.d(TAG, "token is : $token")
+        Log.d(TAG, "xxxx token is : $token")
 
         // If you want to send messages to this application instance or
         // manage this apps subscriptions on the server side, send the
         // Instance ID token to your app server.
         sendRegistrationToServer(token)
-        //Toast.makeText(baseContext, token, Toast.LENGTH_SHORT).show()
+        Log.d("xxxxx token is",token)
     }
 
     private fun sendRegistrationToServer(token: String) {
@@ -198,7 +187,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val request = Request.Builder()
             //.url("http://192.168.0.108:8000/api/fcm")
-            .url("http://multaka.ahmadiraq.com/api/fcm")
+            .url("http://school.ahmadiraq.com/api/fcm")
             .post(body)
             .build()
 

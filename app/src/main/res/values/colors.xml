@@ -2,8 +2,10 @@
 <resources>
     <color name="colorPrimary">#8F2FC7</color>
     <color name="colorPrimaryDark">#41054D</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#FEFEFE</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorPurple">#A226B9</color>
     <color name="colorPurpleLight">#E68EF8</color>
+    <color name="blueOfSchool">#084374</color>
+
 </resources>

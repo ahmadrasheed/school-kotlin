@@ -1,9 +1,8 @@
-package com.ara.multaka
+package com.ara.school
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
 
 class SplashActivity : AppCompatActivity() {
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ara.multaka">
+    package="com.ara.school">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,12 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name="com.ara.school.AboutActivity"></activity>
         <activity
-            android:name=".NotificationResultActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:name="com.ara.school.NotificationResultActivity"
+            android:parentActivityName="com.ara.school.MainActivity"></activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.ara.school.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,10 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.ara.school.MainActivity"></activity>
 
         <service
-            android:name=".MyFirebaseMessagingService"
+            android:name="com.ara.school.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

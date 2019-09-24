@@ -1,48 +1,24 @@
-package com.ara.multaka
+package com.ara.school
 
 import android.annotation.SuppressLint
-import android.app.DownloadManager
 import android.content.Intent
 import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.ProgressBar
-import android.widget.Toast
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.activity_main.*
-import okhttp3.*
-import java.io.IOException
-import android.widget.EditText
 
 
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.net.Uri
-import android.os.Environment
 import android.view.KeyEvent
 import android.webkit.*
 
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import com.ara.multaka.R.layout.activity_main
-import com.ara.multaka.R.layout.fragment_home
-import com.ara.multaka.fragments.AboutFragment
-import com.ara.multaka.fragments.HomeFragment
+import com.ara.school.R.layout.activity_main
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlin.math.log
 
 
 class MainActivity : AppCompatActivity() {
@@ -61,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         this.webWindow.settings.javaScriptEnabled = true
         this.webWindow.settings.setAppCacheEnabled(true)
         this.webWindow.settings.domStorageEnabled
-        this.webWindow.loadUrl("http://multaka.ahmadiraq.com")
+        this.webWindow.loadUrl("http://school.ahmadiraq.com")
         this.webWindow.webViewClient = object : WebViewClient() {
 
             override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {

@@ -1,4 +1,4 @@
-package com.ara.multaka
+package com.ara.school
 
 import org.junit.Test
 
